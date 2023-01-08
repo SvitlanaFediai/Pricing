@@ -1,0 +1,86 @@
+
+.card {
+
+  &__box {
+    font-family: $decorate-font;
+  }
+
+  &__price {
+    font-weight: 100;
+    font-size: 3.75rem;
+    letter-spacing: 4.8px;
+    
+  }
+
+  &__currency {
+    color: $color-black-dark;
+
+    font-weight: 100;
+    font-size: 1.5rem;
+    
+  }
+  
+
+  &__per-hour {
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: 1.3px;
+    text-transform: none;
+  }
+
+
+  &__cource {
+    font-family: $decorate-font;
+
+    font-weight: 300;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  &__item {
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: 0.6px;
+    line-height: 1.25;
+  }
+
+  &__button {
+    font-family: $decorate-font;
+    color: $color-white;
+
+    font-weight: 400;
+    font-size: 1.125rem;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    
+  }
+
+  &__discount {
+    color: $color-gray;
+
+    font-weight: 300;
+    font-size: 0.687rem;
+    letter-spacing: 0.5px;
+  }
+
+  &__badge {
+    font-family: $decorate-font;
+    color: $color-white;
+
+    text-transform: uppercase;
+      
+      
+
+    &--ellipse {
+      font-weight: 300;
+      font-size: 1.5rem;
+    
+    }
+
+    &--tooltip {
+      font-weight: 400;
+      letter-spacing: 0.6px;
+    }
+  }
+}

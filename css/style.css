@@ -1,0 +1,339 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (min-width: 350px) and (max-width: 767px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+body {
+  min-width: 350px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #000000;
+  min-height: 100vh;
+  background-color: #9789F9;
+}
+
+@font-face {
+  font-family: "BebasNeue";
+  src: url("../fonts/Bebas-neue-thin/Bebasneuethin.woff2") format("woff2"), url("../fonts/Bebas-neue-thin/Bebasneuethin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BebasNeue";
+  src: url("../fonts/Bebas-neue-book/Bebasneuebook.woff2") format("woff2"), url("../fonts/Bebas-neue-book/Bebasneuebook.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BebasNeue";
+  src: url("../fonts/Bebas-neue-regular/Bebasneueregular.woff2") format("woff2"), url("../fonts/Bebas-neue-regular/Bebasneueregular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+.card__box {
+  font-family: "BebasNeue";
+}
+.card__price {
+  font-weight: 100;
+  font-size: 3.75rem;
+  letter-spacing: 4.8px;
+}
+.card__currency {
+  color: #181818;
+  font-weight: 100;
+  font-size: 1.5rem;
+}
+.card__per-hour {
+  font-weight: 300;
+  font-size: 1rem;
+  letter-spacing: 1.3px;
+  text-transform: none;
+}
+.card__cource {
+  font-family: "BebasNeue";
+  font-weight: 300;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.card__item {
+  font-weight: 300;
+  font-size: 1rem;
+  letter-spacing: 0.6px;
+  line-height: 1.25;
+}
+.card__button {
+  font-family: "BebasNeue";
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 1.125rem;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+.card__discount {
+  color: #A9A9A9;
+  font-weight: 300;
+  font-size: 0.687rem;
+  letter-spacing: 0.5px;
+}
+.card__badge {
+  font-family: "BebasNeue";
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.card__badge--ellipse {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+.card__badge--tooltip {
+  font-weight: 400;
+  letter-spacing: 0.6px;
+}
+
+.container {
+  max-width: 1200px;
+  min-width: 350px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+@media screen and (min-width: 350px) and (max-width: 1200px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 767px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+    margin: 30px 0 30px;
+  }
+}
+
+.card {
+  background-color: #F5F3F9;
+  -webkit-box-shadow: 0px 0px 20px #8677EF;
+          box-shadow: 0px 0px 20px #8677EF;
+  -ms-flex-preferred-size: 30.8%;
+      flex-basis: 30.8%;
+  width: 100%;
+  padding-bottom: 60px;
+  position: relative;
+}
+.card--big {
+  -ms-flex-preferred-size: 33.3%;
+      flex-basis: 33.3%;
+}
+.card--big .card__price {
+  margin-top: 50px;
+}
+.card--big .card__icon {
+  width: 40px;
+  height: 40px;
+}
+.card__price {
+  margin: 40px 0 24px;
+}
+.card__currency {
+  text-transform: none;
+  vertical-align: super;
+  position: relative;
+  top: -5px;
+}
+.card__cource {
+  margin-bottom: 30px;
+}
+.card__order {
+  overflow: hidden;
+  width: 100%;
+}
+.card__block {
+  background-color: #ffffff;
+  padding: 65px 20px 60px;
+  border-radius: 50% 50% 0 0;
+  position: relative;
+  width: 120%;
+  left: -10%;
+}
+.card__icon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.card__list {
+  margin-top: 40px;
+}
+.card__item {
+  margin-bottom: 30px;
+}
+.card__item:last-child {
+  margin-bottom: 0;
+}
+.card__button {
+  background-color: #6FCFFB;
+  padding: 20px 50px;
+  border-radius: 30px;
+  position: absolute;
+  white-space: nowrap;
+  bottom: -29px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+@media screen and (min-width: 350px) and (max-width: 767px) {
+  .card__button {
+    bottom: 29px;
+  }
+}
+.card__button:hover {
+  background-color: #FD8D7B;
+}
+.card__button--main {
+  bottom: 70px;
+  background-color: #FD8D7B;
+}
+.card__button--main:hover {
+  background-color: #6FCFFB;
+}
+.card__discount {
+  position: relative;
+  top: 55px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 350px) and (max-width: 767px) {
+  .card__badge {
+    position: absolute;
+    left: 76%;
+  }
+}
+.card__badge--ellipse {
+  background-color: #FD8D7B;
+  padding: 15px 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 15px;
+  right: 30px;
+}
+.card__badge--icon {
+  width: 20px;
+  height: 20px;
+  color: #FD8D7B;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.card__badge--tooltip {
+  background-color: #3B4040;
+  padding: 8px 24px 6px;
+  border-radius: 20px;
+  position: absolute;
+  top: 25px;
+  right: -75px;
+  z-index: 2;
+  -webkit-box-shadow: 15px 0px 25px #8677EF;
+          box-shadow: 15px 0px 25px #8677EF;
+}
+.card__badge--tooltip::before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-top: 9px solid transparent;
+  border-right: 10px solid #3B4040;
+  border-bottom: 9px solid transparent;
+  left: -6px;
+  top: 6px;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.link {
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,28 @@
+//fonts
+$text-font: 'Roboto', sans-serif;
+$decorate-font: 'BebasNeue';
+
+//colors
+$color-white:             #ffffff;
+$color-black-default:     #000000;
+$color-black-light:       #3B4040;
+$color-black-dark:        #181818;
+$color-red:               #FD8D7B;
+$color-blue:              #6FCFFB;
+$color-gray-light:        #F5F3F9;
+$color-background:        #9789F9;
+$color-gray:              #A9A9A9;
+
+
+//breakpoints
+$dekstop: 1360px;
+$tablet-end: $dekstop - 1;
+$tablet-start: 768px;
+$mobile-end: $tablet-start - 1;
+$mobile: 350px;
+
+//font-size
+$default-font-size: 16px;
+
+//width
+$max-width: 1200px;

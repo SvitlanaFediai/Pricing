@@ -1,0 +1,169 @@
+.card {
+  background-color: $color-gray-light;
+  box-shadow: 0px 0px 20px #8677EF;
+  flex-basis: 30.8%;
+  width: 100%;
+  padding-bottom: 60px;
+  position: relative;
+
+
+  &--big {
+    flex-basis: 33.3%;
+
+    .card__price {
+      margin-top: 50px;
+    }
+
+    .card__icon {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &__box {
+   
+  }
+
+  &__price {
+    margin: 40px 0 24px;
+  }
+
+  &__currency {
+    text-transform: none;
+    vertical-align: super;
+    position: relative;
+    top: -5px;
+  }
+  
+
+  &__per-hour {
+    
+  }
+
+  &__cource {
+    margin-bottom: 30px;
+  }
+
+  &__order {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  &__block {
+    background-color: $color-white;
+    padding: 65px 20px 60px;
+    border-radius: 50% 50% 0 0;
+    position: relative;
+    width: 120%;
+    left: -10%;
+  }
+
+  &__icon {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+
+  }
+
+  &__list {
+    margin-top: 40px;
+  }
+
+  &__item {
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__button {
+    background-color: $color-blue;
+    padding: 20px 50px;
+    border-radius: 30px;
+    position: absolute;
+    white-space: nowrap;
+    bottom: -29px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .5s;
+
+    @media screen and (min-width: $mobile) and (max-width: $mobile-end) {
+      bottom: 29px;
+    }
+
+    &:hover {
+      background-color: $color-red;
+    }
+
+    &--main {
+      bottom: 70px;
+      background-color: $color-red;
+
+      &:hover {
+        background-color: $color-blue;
+      }
+    }
+  }
+
+  &__discount {
+    position: relative;
+    top: 55px;
+    margin-bottom: 30px;
+  }
+
+  &__badge {
+    
+    @media screen and (min-width: $mobile) and (max-width: $mobile-end) {
+      position: absolute;
+      left: 76%;
+    }
+
+    &--ellipse {
+      background-color: $color-red;
+      padding: 15px 20px;
+      border-radius: 50%;
+      position: absolute;
+      top: 15px;
+      right: 30px;
+    }
+
+    &--icon {
+      width: 20px;
+      height: 20px;
+      color: $color-red;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+    &--tooltip {
+      background-color: $color-black-light;
+      padding: 8px 24px 6px;
+      border-radius: 20px;
+      position: absolute;
+      top: 25px;
+      right: -75px;
+      z-index: 2;
+      box-shadow: 15px 0px 25px #8677EF;
+
+      &::before {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        border-top: 9px solid transparent;
+        border-right: 10px solid $color-black-light;
+        border-bottom: 9px solid transparent;
+        left: -6px;
+        top: 6px;
+      }
+        
+    
+    }
+  }
+}
+

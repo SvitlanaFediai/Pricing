@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+
+  @media screen and (min-width: $mobile) and (max-width: $mobile-end) {
+    font-size: 14px;
+  }
+}
+
+body {
+  min-width: 350px;
+
+  font-family: $text-font;
+  font-size: $default-font-size;
+  color: $color-black-default;
+
+  min-height: 100vh;
+  background-color: $color-background;
+
+}
+
+
+
+
